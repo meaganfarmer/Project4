@@ -1,72 +1,93 @@
 alert("JavaScript works!");
 // string
+//cd ~/Desktop/
+//ls
+//cs Project2
 
+//#1
 //Does a string follow a 123-456-7890 pattern like a phone number?
 
-var phone = "918-822-7535"
-var end = myString.indexOf("-");
-var prefix =myStringIndexOf("-")+1;
-var start = myString.lastIndexOf("-"+1;)
-var stopping = myString.length;
-//area code
+var myString = "918-822-7535";
 
-myString.Substring(0,end)
+var areaCode = myString.substring(0, 3); {
+    var myReturn = (areaCode) ;
 
-//prefix
+var prefix = myString.substring(3, 7); {
+   var theReturn = (prefix);
 
-myString.substring(prefix,end);
+var lastFour = myString.substring(7,12); {
+  var lastReturn = (lastFour);
+  
+var phoneNumber = myReturn + theReturn + lastReturn;
 
-//lastFour
-myString.substring(start,end)
+ console.log(phoneNumber);
+}}};
+
+var phone = ^?(/d{3})?[-\.]??(/d{3})?(\d{4})$/;
+
+//boolean test of phone number
+function patternTest(pattern){
+    return phone.test(pattern){
+        
+    }
+    console.log("phone number works");
+}
+else
+    console.log("check phone number for error");
+//var testingNumber = phoneNumber.test(pattern);
+   // var results = testingNumber
+  //  console.log(testingNumber)
 
 
-
-//comment
-
+//#2
 //Does a string follow an aaa@bbb.ccc pattern like an email address?
 
+var myEmail = "myemail@yahoo.com"
+var body = myEmail.substring(0, at );{
+    var myBody = (body)
+    console.log(myBody);
+}
+var at = myEmail.indexOf("@");
+
+//var pattern2 = ^\W@\W.\W$;
+ //   var testingEmail = pattern2(myEmail) 
+   // var emailResults = testingEmail
+  //  console.log(emailResults)
 //comment
 
+
+//#3
 //Is the string a URL? (Does it start with http: or https:?)
 
-//comment
 
-//Title-case a string (split into words, then uppercase the first letter of each word)
+var urlString = "https://www.facebook.com"
 
-//comment
+if(urlString.indexOf("http:")>-1) {
+    console.log("URL starts with http:")
+}
 
-//Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
-
-//comment
-
-//number
-
-//Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
-
-//comment
-
-//Fuzzy-match a number: is the number above or below a number within a certain percent?
-
-            //comment
-
-//Find the number of hours or days difference between two dates.
-
-            //comment
+if (urlString.indexOf("https:")> -1) {
+    console.log("URL States with https:")
+}
 
 //Given a string version of a number such as "42", return the value as an actual Number, such as 42.
-
-            //comment
+//#9
+var conversion = "42"
+var convert = parseInt(conversion);
+    console.log(convert)
+//comment
 
 //Array
 
 //Find the smallest value in an array that is greater than a given number
 
-            //comment
+//#10
+var given = "28"
+var given2 = parseInt(given)
+var val = [3 , 60 ,80 ,25 ,40 ,30 ,12];
+var x = Math.min(val > given);
+console.log(x);
 
-//Find the total value of just the numbers in an array, even if some of the items are not numbers.
+//comment
 
-            //comment
 
-//Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
-
-            //comment
