@@ -7,15 +7,18 @@ alert("JavaScript works!");
 //global variables
 	//var for phone number
 var phoneNumber = "123-456-7891";
-var areaCode = phoneNumber.substring(0,3);
-var prefix = phoneNumber.substring(4,7);
-var lastFour = phoneNumber.substring(8,12);
-var finalNumber = areaCode + "- "+ prefix + "-" + lastFour;
-var hyphen = " - " ;
+
+
+
 
 
 //functions
+//function for phone number
 var makePhoneNumber = function(areaCode, hyphen, prefix, hyphen, lastFour){
+var areaCode = phoneNumber.substring(0,3);
+var prefix = phoneNumber.substring(4,7);
+var lastFour = phoneNumber.substring(8,12);
+var finalNumber = areaCode + "-"+ prefix + "-" + lastFour;
 	if (finalNumber === phoneNumber )
 		console.log("awesome");
 } else {
@@ -25,4 +28,4 @@ var makePhoneNumber = function(areaCode, hyphen, prefix, hyphen, lastFour){
 };
 
 //function calls
-//console.log(finalNumber);
+//need function call for phone number... I have no idea what!!!!
