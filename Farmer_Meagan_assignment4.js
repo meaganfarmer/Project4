@@ -7,7 +7,8 @@ alert("JavaScript works!");
 //global variables
 	//var for phone number
 var phoneNumber = "123-456-7891";
-
+	//var for email
+var myEmail = "cakewalk@gmail.com";
 
 
 
@@ -21,11 +22,18 @@ var lastFour = phoneNumber.substring(8,12);
 var finalNumber = areaCode + "-"+ prefix + "-" + lastFour;
 	if (finalNumber === phoneNumber )
 		console.log("awesome");
-} else {
+//} else {
 		console.log("Poo");
-	
-	
 };
+
+//function for email
+var makeEmail = function(username, at, provider, domain){
+	var usernameStop = makeEmail
+	var username = myEmail.substring(0,usernamestop)
+};
+
+
 
 //function calls
 //need function call for phone number... I have no idea what!!!!
+//function call for email
