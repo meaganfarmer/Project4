@@ -25,11 +25,19 @@ var finalNumber = areaCode + "-"+ prefix + "-" + lastFour;
 //} else {
 		console.log("Poo");
 };
+var email = "myEmail@yahoo.com"
 
 //function for email
 var makeEmail = function(username, at, provider, domain){
-	var usernameStop = makeEmail
-	var username = myEmail.substring(0,usernamestop)
+	var testForAt = email.indexof("@");
+	var testForDot = email.indexOf(".");
+	return testForAt && testForDot;
+	if (testForAt && testForDot == -1)
+		console.log("Email appears valid")
+		
+
+	
+	
 };
 
 
