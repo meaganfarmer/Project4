@@ -9,8 +9,9 @@ alert("JavaScript works!");
 var phoneNumber = "123-456-7891";
 	//var for email
 var myEmail = "cakewalk@gmail.com";
-
-
+	//var for URL
+var url = "https://www.livefree.com"
+	
 
 
 //functions
@@ -35,12 +36,18 @@ var makeEmail = function(username, at, provider, domain){
 	if (testForAt && testForDot == -1)
 		console.log("Email appears valid")
 		
-
-	
-	
 };
 
-
+//Function for URL
+var testURL = function (protocol, colon, server, domain) {
+var protocol = (https || https)
+	if(url.indexof("http")>-1) {
+		console.log("URl is HTTP:");
+	if(url.indexOf("https")>-1) {
+	
+		console.log("URL is HTTPS:")
+		
+	}}};
 
 //function calls
 //need function call for phone number... I have no idea what!!!!
